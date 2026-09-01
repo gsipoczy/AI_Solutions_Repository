@@ -1,0 +1,48 @@
+.main_heading{
+    font-size: 3em;
+}
+.main_form{
+    margin:auto;
+    width: 80%;
+}
+.main_error{
+    color: red;
+}
+.Header, .Footer {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navlogin {
+    color: #212529;
+}
+
+.pwclogo {
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+
+.keep_distance {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.bg_color {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../images/pwcb.png');
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: left 0px top 10px;
+}
+
+body {
+    background-image: url('../../images/pwclogo.png');
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: left 0px top 0px;
+}

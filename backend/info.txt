@@ -1,0 +1,61 @@
+pip install:
+flask
+flask_restx
+flask_sqlalchemy
+flask_jwt_extended
+flask_migrate
+python_decouple
+
+> pip freeze > requirements.txt
+
+------------------------------------------
+Create secret key:
+
+> python
+>>> import secrets
+>>> secrets.token_hex(12)
+(copy into .env without '')
+
+------------------------------------------
+Run:
+
+> python main.py
+Browser: 
+localhost:5000/docs - for testing the APIs
+localhost:5000/hello - simple Hello World
+
+alternative:
+> ./run.sh
+
+------------------------------------------
+Create DB:
+
+Check that the db works:
+> export FLASK_APP=main.py
+> flask_shell
+>>>db
+<SQLAlchemy sqlite:////home/gabor/vscode/react/flaskapp/backend/dev.db>
+>>>User
+<class 'models.User'>
+
+Create the db:
+>>>db.create_all()
+-> creates dev.db
+
+List what can db applied to:
+> flask db
+
+Create the migrations repository:
+> flask db init
+
+After a DB change, create a migration and update:
+> flask db migrate -m "description of the change"
+> flask db upgrade
+
+------------------------------------------
+KILL the program using a port:
+> fuser -k 8080/tcp
+
+------------------------------------------
+GPT KEY: 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
+MODEL: gpt-3.5-turbo

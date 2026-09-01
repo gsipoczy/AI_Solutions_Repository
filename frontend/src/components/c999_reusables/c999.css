@@ -1,0 +1,34 @@
+.c999_item {
+    margin-top: 20px;
+}
+.c999_button {
+    margin-right: 20px;
+}
+.c999_error{
+    color: red;
+}
+.c999_textarea {
+    height: 100px;
+}
+.c999_display_linebreak {
+    white-space: pre-line;
+}
+.c999_button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.c999_loader {
+    margin: auto;
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #FF7A59;
+    width: 200px;
+    height: 200px;
+    animation: spinner 4s linear infinite;
+}
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
